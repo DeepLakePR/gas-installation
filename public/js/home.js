@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         $(button).on('click', ()=>{
 
-            scroll({'top': $(`.${$(button).attr('scroll-target')}`).position().top - 100, 'behavior': 'smooth'});
+            scroll({'top': $(`.${$(button).attr('scroll-target')}`).position().top - 150, 'behavior': 'smooth'});
 
         });
 

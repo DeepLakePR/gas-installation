@@ -1,6 +1,6 @@
 /************************************************/
 /* Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,12 +36,12 @@ body {
     z-index: 1000;
 }
 
-.header .logo{
+.header .logo {
     width: 78px;
     height: 78px;
 }
 
-.header .logo img{
+.header .logo img {
     width: 100%;
 }
 
@@ -83,7 +83,7 @@ body {
     position: relative;
 }
 
-.cta-banner .overlay{
+.cta-banner .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,17 +93,17 @@ body {
     z-index: 1;
 }
 
-.cta-banner .cta-text{
+.cta-banner .cta-text {
     position: relative;
     z-index: 2;
 }
 
-.cta-banner h1{
+.cta-banner h1 {
     font-size: 2.5rem;
     font-weight: 500;
 }
 
-.cta-banner p{
+.cta-banner p {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 40px;
@@ -124,25 +124,25 @@ body {
 
 /************************************************/
 /* About */
-.about h2{
+.about h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
-.about p{
+.about p {
     margin-bottom: 0.7rem;
     letter-spacing: 0.9px;
 }
 
-.about img{
+.about img {
     border-radius: 8px;
     max-height: 400px;
 }
 
 /************************************************/
 /* Service */
-.services h2{
+.services h2 {
     margin-bottom: 1.2rem;
     font-size: 2.2rem;
 }
@@ -167,7 +167,7 @@ body {
     color: #0c7ae9;
 }
 
-.service-item h3{
+.service-item h3 {
     font-size: 1.5rem;
     color: #333;
     margin: 0.5rem 0;
@@ -175,7 +175,7 @@ body {
     font-weight: 600;
 }
 
-.service-item p{
+.service-item p {
     letter-spacing: 0.9px;
 }
 
@@ -186,7 +186,7 @@ body {
     padding: 2rem 1rem;
     border-radius: 8px;
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem 1rem;
     box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -196,19 +196,19 @@ body {
     margin-bottom: 1rem;
 }
 
-.contact a{
+.contact a {
     transition: all 0.25s ease-in-out;
     font-size: 4rem;
     color: #0dc042;
 }
 
-.contact a:hover{
+.contact a:hover {
     color: #097529;
 }
 
 /************************************************/
 /* Fixed Info */
-div.fixed-info{
+div.fixed-info {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -219,13 +219,13 @@ div.fixed-info{
     z-index: 99999;
 }
 
-div.fixed-info .whatsapp-button a{
+div.fixed-info .whatsapp-button a {
     transition: all 0.25s ease-in-out;
     font-size: 45px;
     color: #0dc042;
 }
 
-div.fixed-info .whatsapp-button a:hover{
+div.fixed-info .whatsapp-button a:hover {
     color: #0b8b31;
 }
 
@@ -238,39 +238,107 @@ footer {
     padding: 1.5rem 0;
 }
 
-footer .site-developer{
+footer .site-developer {
     opacity: 0.65;
     margin-top: 0.5rem;
-}
-
-footer .site-developer{
     letter-spacing: 1.1px;
     color: #bebebe;
 }
 
-footer .site-developer a{
+footer .site-developer a {
     text-decoration: underline;
     font-weight: 800;
     color: #bebebe;
     transition: all 0.25s ease-in-out;
 }
 
-footer .site-developer a:hover{
+footer .site-developer a:hover {
     color: #969696;
 }
 
 
 /************************************************/
 /* Responsive */
-@media screen and (max-width: 792px){
+@media screen and (max-width: 800px) {
+
+    /* Header */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    /* CTA Section */
+    .cta-banner h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .cta-banner p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* About */
+    .about p{
+        font-size: 14px;
+    }
+
+    .about img {
+        max-width: none;
+        width: 100%;
+    }
+
+    /* Services */
+    .services h2 {
+        font-size: 2rem;
+    }
+    
+    .service-items {
+        gap: 2rem;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 1.5rem 0.5rem;
+        margin: 2rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact a {
+        font-size: 3.5rem;
+    }
 
     /* Fixed Info */
-    div.fixed-info{
+    div.fixed-info {
         padding: 10px;
     }
 
-    div.fixed-info .whatsapp-button a{
-        font-size: 35px;
+    div.fixed-info .whatsapp-button a {
+        font-size: 38px;
+    }
+
+    /* Footer */
+    footer p:first-child{
+        font-size: 15px;
+    }
+
+    footer .site-developer {
+        opacity: 0.85;
+        margin: 0 3rem;
+        margin-top: 0.5rem;
+        letter-spacing: 1.1px;
+        color: #bebebe;
+        font-size: 14px;
     }
 
 }
